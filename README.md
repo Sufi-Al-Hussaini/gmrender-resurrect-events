@@ -1,22 +1,22 @@
 # gmrender-resurrect-events
 
-A simple shell script which listens for [gmrender-resurrect](https://github.com/hzeller/gmrender-resurrect) media playback events and notifies other apps (in user defined ways).
+Simple shell script which listens for [gmrender-resurrect](https://github.com/hzeller/gmrender-resurrect) media playback events and notifies other apps (in user defined ways).
 
-### Usage
+
+## Usage
 
 Define your notification mechanism by implementing the `notify_play`, `notify_pause` & `notify_stop` functions in `gmr_ev.sh`.
 
 
-### Installation
+## Installation
 
-To install run the install.sh script.
+To install, run the install.sh script.
+```sudo sh install.sh [--logfile=/tmp/gmediarenderer.log]```
 
-sudo sh install.sh [--logfile=/tmp/gmediarenderer.log]
-
-If `logfile` isn't set, it defaults to `/tmp/gmrender.log`.
+***Note***: If `logfile` isn't set, it defaults to `/tmp/gmrender.log`.
 
 
-### How it works
+## How it works
 
 The script is meant to be run as a cronjob, started on boot. 
 
